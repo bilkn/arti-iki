@@ -41,7 +41,7 @@ function Home() {
             <Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
           </Img.Container>
           <Img.Container>
-            <Img src={Img_3_JPG} />
+            <Img src={Img_3_JPG} style={{ objectPosition: '30% 30%' }} />
           </Img.Container>
         </Img.Wrapper>
         <Hero.SignatureWrapper style={{ background: '#fff' }}>
@@ -87,7 +87,7 @@ function Home() {
       {/* VISION SECTION START */}
       <Content style={{ background: 'black', color: '#fff' }}>
         <Img.Container>
-          <Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
+          <Img src={Img_1_JPG} style={{ objectPosition: 'center center' }} />
         </Img.Container>
         <Content.Wrapper>
           <Content.Heading>Vizyon</Content.Heading>
