@@ -8,7 +8,8 @@
         "node_modules": true,
         ".vscode": true,
         "package-lock.json": true,
-        ".gitignore": true
+        ".gitignore": true,
+        "package.json": true
     },
     "explorerExclude.backup": null
 }

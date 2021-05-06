@@ -1,0 +1,32 @@
+.hero {
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+
+  // hero__background
+  &__background {
+    background: url("../../../public/assets/fireplace-1.jpg");
+    width: 100%;
+  }
+
+  // hero__logo
+  &__logo {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 5.3em;
+  }
+
+  // hero__title
+  &__title {
+    line-height: 1.9;
+    margin-top: 7.125em;
+  }
+
+  // hero__text
+  &__text {
+    color: #f2f2f2;
+    line-height: 1.3;
+    margin-top: 20px;
+  }
+}
