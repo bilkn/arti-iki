@@ -1,4 +1,5 @@
 import React from 'react';
+import "./content.scss";
 
 export default function Content({ children, ...rest }) {
   return (

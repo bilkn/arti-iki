@@ -83,6 +83,7 @@ function Home() {
           </Content.Text>
         </Content.Wrapper>
       </Content>
+      {/* ABOUT SECTION END */}
     </>
   );
 }
