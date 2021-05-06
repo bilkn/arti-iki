@@ -50,8 +50,7 @@
   // hero__signature-wrapper
   &__signature-wrapper {
     background: #000;
-    display: flex;
-    font-size: 1.9rem;
+    display: flex;  
     min-height: 20vh;
     padding: 30px 0;
   }
@@ -59,6 +58,7 @@
   // hero__signature
   &__signature {
     font-family: $font_dancing_script;
+     font-size: 1.9rem;
     margin: auto;
   }
 }

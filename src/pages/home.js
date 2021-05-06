@@ -84,6 +84,30 @@ function Home() {
         </Content.Wrapper>
       </Content>
       {/* ABOUT SECTION END */}
+      {/* VISION SECTION START */}
+      <Content style={{ background: 'black', color: '#fff' }}>
+        <Img.Container>
+          <Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
+        </Img.Container>
+        <Content.Wrapper>
+          <Content.Heading>Vizyon</Content.Heading>
+          <Content.Text>
+            Sıfır hata, %100 müşteri memnuniyeti ile Türkiye ve dünya pazarında
+            lider kuruluşlar arasında olmayı hedefleyen X,
+          </Content.Text>
+          <br />
+          <Content.Text>
+            Alanında öncü bir geleceğe oynarken iş ortakları ile yaratıcı
+            çözümler üreten, teknoloji ve markaları ile fark yaratan, bireye ve
+            çevreye saygılı bir dünya şirketi olmayı da amaçlıyor.
+          </Content.Text>
+          <br />
+          <Hero.Signature style={{ margin: 'initial' }}>
+            art of business
+          </Hero.Signature>
+        </Content.Wrapper>
+      </Content>
+      {/* VISION SECTION END */}
     </>
   );
 }
