@@ -108,6 +108,58 @@ function Home() {
         </Content.Wrapper>
       </Content>
       {/* VISION SECTION END */}
+      {/* MISSION SECTION START */}
+      <Content>
+        <Img.Container>
+          <Img src={Img_3_JPG} style={{ objectPosition: '30% 30%' }} />
+        </Img.Container>
+        <Content.Wrapper>
+          <Content.Heading>Misyon</Content.Heading>
+          <Content.Text>
+            • Müşterilerimizin ihtiyaçlarını yerinde anlayıp kaliteli ürün ve
+            hizmet sunarak memnuniyetlerinin sürekliliğini garanti etmek,
+            memnuniyet oranını arttırmak ve güvenilir ve aranan bir firma olmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Müşteri ve tedarikçi sayımız ile ürün ve hizmet kalite ve
+            çeşitliliğimizi sürekli iyileştirip arttırmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Çalışanlarımız arasında karşılıklı güven, saygı, sevgi, anlayış ve
+            iletişimi hep daha iyiye götürmek.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • İş hacmini sürekli geliştirmek ve ülke ekonomisine sürekli katkıda
+            bulunmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Paydaşlar arasında adil dengeyi sağlamak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • İş hacmini sürekli geliştirmek ve ülke ekonomisine sürekli katkıda
+            bulunmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Açık, şeffaf ve etik kuralları önemseyen, yasal mevzuata uyan bir
+            firma olmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Topluma ve çevreye saygılı örnek bir firma olmak.
+          </Content.Text>
+          <br />
+          <Content.Text>
+            • Sosyal sorumluluk projelerine destek verip yer almak.
+          </Content.Text>
+        </Content.Wrapper>
+      </Content>
+      {/* MISSION SECTION END */}
     </>
   );
 }

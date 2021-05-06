@@ -2,16 +2,24 @@
 
 .content {
   background: $section_bg_color_1;
+  color: $section_text_color;
 
+  // content__heading
   &__heading {
     font-family: $font-poppins;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: 2.2em;
+    margin-bottom: 20px;
   }
 
+  // content__wrapper
   &__wrapper {
     padding: 42px 30px;
+  }
+
+  // content__text
+  &__text {
+    line-height: 1.4;
   }
 }
