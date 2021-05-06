@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content, Hero, Img } from '../components';
+import { Content, Footer, Hero, Img } from '../components';
 import { assets } from '../fixtures/assets';
 import Img_1_JPG from '../assets/fireplace-1.jpg';
 import Img_2_JPG from '../assets/fireplace-2.jpg';
@@ -160,6 +160,58 @@ function Home() {
         </Content.Wrapper>
       </Content>
       {/* MISSION SECTION END */}
+      {/* FOOTER START */}
+      <Footer>
+        <Footer.Wrapper>
+          <Footer.Heading>FirePlace</Footer.Heading>
+          <Footer.Text>Lorem ipsum dolor sit amet consectetur.</Footer.Text>
+        </Footer.Wrapper>
+        <Footer.Wrapper>
+          <Footer.Heading>Adres</Footer.Heading>
+          <Footer.Text>
+            Lorem ipsum dolor sit amet consectetur,lorem ipsum dolor amet
+            consectetur.
+          </Footer.Text>
+          <br />
+          <Footer.Text>lorem ipsum dolor sit amet consectetur.</Footer.Text>
+        </Footer.Wrapper>
+        <Footer.Wrapper>
+          <Footer.Heading>İletişim</Footer.Heading>
+          <Footer.Text>Lorem Ipsum Dolor</Footer.Text>
+          <Footer.SubHeading>Telefon</Footer.SubHeading>
+          <Footer.Link href="tel:00000000000">0 (000) 000 00 00</Footer.Link>
+          <Footer.SubHeading>E-mail</Footer.SubHeading>
+          <Footer.Link href="mailto:destek@lorem.com">
+            destek@lorem.com
+          </Footer.Link>
+        </Footer.Wrapper>
+        <Footer.Wrapper>
+          <Footer.Heading>Sosyal Medya</Footer.Heading>
+          <Footer.List>
+            <Footer.Item>
+              <Footer.Link href="https://www.facebook.com/artiiki/">
+                Facebook
+              </Footer.Link>
+            </Footer.Item>
+            <Footer.Item>
+              <Footer.Link href="https://www.instagram.com/artiiki/">
+                Instagram
+              </Footer.Link>
+            </Footer.Item>
+            <Footer.Item>
+              <Footer.Link href="https://twitter.com/artiiki">
+                Twitter
+              </Footer.Link>
+            </Footer.Item>
+            <Footer.Item>
+              <Footer.Link href="https://www.youtube.com/user/artiiki">
+                Youtube
+              </Footer.Link>
+            </Footer.Item>
+          </Footer.List>
+        </Footer.Wrapper>
+      </Footer>
+      {/* FOOTER END */}
     </>
   );
 }

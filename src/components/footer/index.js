@@ -41,9 +41,25 @@ Footer.Text = function FooterText({ children, ...rest }) {
   );
 };
 
+Footer.List = function FooterList({ children, ...rest }) {
+  return (
+    <ul className="footer__list" {...rest}>
+      {children}
+    </ul>
+  );
+};
+
+Footer.Item = function FooterItem({ children, ...rest }) {
+  return (
+    <ul className="footer__item" {...rest}>
+      {children}
+    </ul>
+  );
+};
+
 Footer.Link = function FooterLink({ children, ...rest }) {
   return (
-    <a className="footer__link" {...rest}>
+    <a className="footer__link" target="_blank" {...rest}>
       {children}
     </a>
   );
