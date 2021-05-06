@@ -10,6 +10,7 @@
 
 html,
 body {
+  color: $section_text_color;
   font-family: $font-montserrat;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -38,4 +39,8 @@ button {
 img {
   display: block;
   max-width: 100%;
+}
+
+.no-margin {
+  margin: 0;
 }

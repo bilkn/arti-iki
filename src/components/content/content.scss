@@ -1,4 +1,5 @@
-@import '../../styles/variables.scss';
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 .content {
   background: $section_bg_color_1;
@@ -13,16 +14,13 @@
 
   // content__heading
   &__heading {
-    font-family: $font-poppins;
-    font-size: 1.25rem;
+    @include HeadingStyle;
     font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 20px;
   }
 
   // content__wrapper
   &__wrapper {
-    padding: 42px 30px;
+    padding: $content_padding;
   }
 
   // content__text

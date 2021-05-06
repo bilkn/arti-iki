@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  // footer__heading
+  &__heading {
+    @include HeadingStyle;
+    font-weight: 500;
+  }
+
+  // footer__sub-heading
+  &__sub-heading {
+    color: #000;
+    line-height: 1.5;
+  }
+
+  // footer__content
+  &__content {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 40em) {
+      margin-right: 2rem;
+    }
+  }
+
+  // footer__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: $content_padding;
+
+    @media screen and (min-width: 40em) {
+      flex-direction: row;
+    }
+  }
+
+  // footer__contact-wrapper
+  &__contact-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  // footer__list
+  &__list {
+    display: flex;
+
+    @media screen and (min-width: 40em) {
+      flex-direction: column;
+    }
+  }
+
+  // footer__item
+  &__item {
+    margin-right: 10px;
+
+    @media screen and (min-width: 40em) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+
+  // footer__link
+  &__link {
+    color: $section_text_color;
+  }
+}

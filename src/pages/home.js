@@ -30,7 +30,6 @@ function Home() {
         </Hero.SignatureWrapper>
       </Hero>
       {/* HERO END */}
-
       {/* IMG GALLERY START */}
       <div>
         <Img.Wrapper>
@@ -44,12 +43,11 @@ function Home() {
             <Img src={Img_3_JPG} style={{ objectPosition: '30% 30%' }} />
           </Img.Container>
         </Img.Wrapper>
-        <Hero.SignatureWrapper style={{ background: '#fff' }}>
+        <Hero.SignatureWrapper style={{ background: '#fff', color: '#000' }}>
           <Hero.Signature>art of business</Hero.Signature>
         </Hero.SignatureWrapper>
       </div>
       {/* IMG GALLERY END */}
-
       {/* ABOUT SECTION START */}
       <Content>
         <Img.Container>
@@ -163,52 +161,75 @@ function Home() {
       {/* FOOTER START */}
       <Footer>
         <Footer.Wrapper>
-          <Footer.Heading>FirePlace</Footer.Heading>
-          <Footer.Text>Lorem ipsum dolor sit amet consectetur.</Footer.Text>
+          <Footer.Content>
+            <Footer.Heading>FirePlace</Footer.Heading>
+            <Footer.Text>Lorem ipsum dolor sit amet consectetur.</Footer.Text>
+          </Footer.Content>
+          <Footer.Content>
+            <Footer.Heading>Adres</Footer.Heading>
+            <Footer.Text>
+              Lorem ipsum dolor sit amet consectetur,lorem ipsum dolor amet
+              consectetur.
+            </Footer.Text>
+            <br />
+            <Footer.Text>lorem ipsum dolor sit amet consectetur.</Footer.Text>
+          </Footer.Content>
+          <Footer.Content>
+            <Footer.Heading>İletişim</Footer.Heading>
+            <Footer.ContactWrapper>
+              <Footer.Text>Lorem Ipsum Dolor</Footer.Text>
+            </Footer.ContactWrapper>
+            <Footer.ContactWrapper>
+              <Footer.SubHeading>Telefon</Footer.SubHeading>
+              <Footer.Link href="tel:00000000000">
+                0 (000) 000 00 00
+              </Footer.Link>
+            </Footer.ContactWrapper>
+            <Footer.ContactWrapper>
+              <Footer.SubHeading>E-mail</Footer.SubHeading>
+              <Footer.Link href="mailto:destek@lorem.com">
+                destek@lorem.com
+              </Footer.Link>
+            </Footer.ContactWrapper>
+          </Footer.Content>
+          <Footer.Content className="no-margin">
+            <Footer.Heading>Sosyal Medya</Footer.Heading>
+            <Footer.List>
+              <Footer.Item>
+                <Footer.Link href="https://www.facebook.com/artiiki/">
+                  Facebook
+                </Footer.Link>
+              </Footer.Item>
+              <Footer.Item>
+                <Footer.Link href="https://www.instagram.com/artiiki/">
+                  Instagram
+                </Footer.Link>
+              </Footer.Item>
+              <Footer.Item>
+                <Footer.Link href="https://twitter.com/artiiki">
+                  Twitter
+                </Footer.Link>
+              </Footer.Item>
+              <Footer.Item>
+                <Footer.Link href="https://www.youtube.com/user/artiiki">
+                  Youtube
+                </Footer.Link>
+              </Footer.Item>
+            </Footer.List>
+          </Footer.Content>
         </Footer.Wrapper>
-        <Footer.Wrapper>
-          <Footer.Heading>Adres</Footer.Heading>
-          <Footer.Text>
-            Lorem ipsum dolor sit amet consectetur,lorem ipsum dolor amet
-            consectetur.
+        <Footer.Wrapper
+          style={{
+            alignItems: 'center',
+            background: '#000',
+            margin: 0,
+            padding: '30px 0',
+            justifyContent: 'center',
+          }}
+        >
+          <Footer.Text style={{ color: '#f7f7f7' }}>
+            Copyright &copy; 2021
           </Footer.Text>
-          <br />
-          <Footer.Text>lorem ipsum dolor sit amet consectetur.</Footer.Text>
-        </Footer.Wrapper>
-        <Footer.Wrapper>
-          <Footer.Heading>İletişim</Footer.Heading>
-          <Footer.Text>Lorem Ipsum Dolor</Footer.Text>
-          <Footer.SubHeading>Telefon</Footer.SubHeading>
-          <Footer.Link href="tel:00000000000">0 (000) 000 00 00</Footer.Link>
-          <Footer.SubHeading>E-mail</Footer.SubHeading>
-          <Footer.Link href="mailto:destek@lorem.com">
-            destek@lorem.com
-          </Footer.Link>
-        </Footer.Wrapper>
-        <Footer.Wrapper>
-          <Footer.Heading>Sosyal Medya</Footer.Heading>
-          <Footer.List>
-            <Footer.Item>
-              <Footer.Link href="https://www.facebook.com/artiiki/">
-                Facebook
-              </Footer.Link>
-            </Footer.Item>
-            <Footer.Item>
-              <Footer.Link href="https://www.instagram.com/artiiki/">
-                Instagram
-              </Footer.Link>
-            </Footer.Item>
-            <Footer.Item>
-              <Footer.Link href="https://twitter.com/artiiki">
-                Twitter
-              </Footer.Link>
-            </Footer.Item>
-            <Footer.Item>
-              <Footer.Link href="https://www.youtube.com/user/artiiki">
-                Youtube
-              </Footer.Link>
-            </Footer.Item>
-          </Footer.List>
         </Footer.Wrapper>
       </Footer>
       {/* FOOTER END */}

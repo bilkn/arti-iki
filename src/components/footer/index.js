@@ -41,6 +41,14 @@ Footer.Text = function FooterText({ children, ...rest }) {
   );
 };
 
+Footer.Content = function FooterContent({ className, children, ...rest }) {
+  return (
+    <div className={`footer__content ${className || ''}`} {...rest}>
+      {children}
+    </div>
+  );
+};
+
 Footer.List = function FooterList({ children, ...rest }) {
   return (
     <ul className="footer__list" {...rest}>
@@ -54,6 +62,14 @@ Footer.Item = function FooterItem({ children, ...rest }) {
     <ul className="footer__item" {...rest}>
       {children}
     </ul>
+  );
+};
+
+Footer.ContactWrapper = function FooterContactWrapper({ children, ...res }) {
+  return (
+    <div className="footer__contact-wrapper" {...res}>
+      {children}
+    </div>
   );
 };
 
