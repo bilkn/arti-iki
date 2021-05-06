@@ -1,0 +1,26 @@
+.img {
+  height: auto;
+  max-height: 216px;
+  object-fit: cover;
+  width: 100%;
+
+  @media screen and (min-width: 40em) {
+    max-height: 365px;
+  }
+
+  // img__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 40em) {
+      flex-direction: row;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: 40em) {
+      flex-basis: 100%;
+    }
+  }
+}

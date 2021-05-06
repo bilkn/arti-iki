@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .hero {
   color: #fff;
@@ -10,7 +10,7 @@
   // hero__background
   &__background {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../../assets/fireplace-1.jpg') center no-repeat;
+      url(#{$img-fireplace_1}.jpg) center no-repeat;
     background-size: cover;
     min-height: inherit;
     width: 100%;
