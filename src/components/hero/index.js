@@ -48,3 +48,19 @@ Hero.Text = function HeroText({ children, ...rest }) {
     </p>
   );
 };
+
+Hero.SignatureWrapper = function HeroSignatureWrapper({children, ...rest}) {
+  return (
+    <div className="hero__signature-wrapper" {...rest}>
+      {children}
+    </div>
+  );
+}
+
+Hero.Signature = function HeroSignature({children, ...rest}) {
+  return (
+    <p className="hero__signature" {...rest}>
+      {children}
+    </p>
+  );
+}

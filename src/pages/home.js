@@ -14,6 +14,9 @@ function Home() {
           </Hero.Text>
         </Hero.Wrapper>
       </Hero.Background>
+      <Hero.SignatureWrapper>
+        <Hero.Signature>art of business</Hero.Signature>
+      </Hero.SignatureWrapper>
     </Hero>
   );
 }
