@@ -170,16 +170,29 @@
 .bg-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(#{$img-fireplace_2}.jpg);
+
+  @media screen and (min-width: $breakpoint-m) {
+    background-position-y: bottom;
+  }
+
+  @media screen and (min-width: 125em) {
+    background-position-y: 80%;
+  }
 }
 
 .bg-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(#{$img-fireplace_4}.jpg);
+
+  @media screen and (min-width: $breakpoint-m) {
+    background-position-y: 65%;
+  }
 }
 
 .bg-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(#{$img-fireplace_3}.jpg);
+  background-position-y: 25%;
 }
 
 // Special class for selected slider button.

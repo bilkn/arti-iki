@@ -8,8 +8,8 @@ function useSlideLogic() {
   };
 
   const moveSlide = useCallback(() => {
-    if (translateXValue < 300) setTranslateXValue((oldValue) => oldValue + 100);
-    else setTranslateXValue(0);
+   /*  if (translateXValue < 300) setTranslateXValue((oldValue) => oldValue + 100);
+    else setTranslateXValue(0); */
   }, [translateXValue]);
 
   useEffect(() => {
