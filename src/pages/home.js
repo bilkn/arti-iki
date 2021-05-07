@@ -210,7 +210,7 @@ function Home() {
                 0 (000) 000 00 00
               </Footer.Link>
             </Footer.ContactWrapper>
-            <Footer.ContactWrapper>
+            <Footer.ContactWrapper className="no-margin">
               <Footer.SubHeading>E-mail</Footer.SubHeading>
               <Footer.Link href="mailto:destek@lorem.com">
                 destek@lorem.com

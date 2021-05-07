@@ -16,11 +16,12 @@
 
   // footer__content
   &__content {
-    flex-basis: 100%;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: $breakpoint_m) {
+    @media screen and (min-width: $breakpoint_s) {
+      margin-bottom: 0;
       margin-right: 2rem;
+      max-width: 25%;
     }
   }
 
@@ -29,6 +30,11 @@
     display: flex;
     flex-direction: column;
     padding: $content_padding;
+
+    @media screen and (min-width: $breakpoint_s) {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     @media screen and (min-width: $breakpoint_m) {
       flex-direction: row;
@@ -45,8 +51,9 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (min-width: $breakpoint_m) {
+    @media screen and (min-width: $breakpoint_s) {
       flex-direction: column;
+      flex-wrap: nowrap;
     }
   }
 
@@ -54,7 +61,7 @@
   &__item {
     margin-right: 10px;
 
-    @media screen and (min-width: $breakpoint_m) {
+    @media screen and (min-width: $breakpoint_s) {
       margin-bottom: 10px;
       margin-right: 0;
     }

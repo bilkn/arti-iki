@@ -65,9 +65,13 @@ Footer.Item = function FooterItem({ children, ...rest }) {
   );
 };
 
-Footer.ContactWrapper = function FooterContactWrapper({ children, ...res }) {
+Footer.ContactWrapper = function FooterContactWrapper({
+  className,
+  children,
+  ...res
+}) {
   return (
-    <div className="footer__contact-wrapper" {...res}>
+    <div className={`footer__contact-wrapper ${className || ''}`} {...res}>
       {children}
     </div>
   );
