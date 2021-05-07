@@ -33,6 +33,7 @@
     font-family: $font_poppins;
     font-weight: 300;
     margin-top: 5.3em;
+    user-select: none;
 
     @media screen and (min-width: $breakpoint_s) {
       font-size: 1.3rem;

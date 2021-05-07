@@ -10,6 +10,10 @@
     max-height: 365px;
   }
 
+  @media screen and (min-width: $breakpoint_xl) {
+    max-height: 560px;
+  }
+
   // img__wrapper
   &__wrapper {
     display: flex;

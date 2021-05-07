@@ -63,7 +63,6 @@
   &__img {
     height: 100%;
     object-fit: cover;
-    object-position: center !important;
     width: 100%;
   }
 }
@@ -72,4 +71,8 @@
   @media screen and (min-width: $breakpoint_s) {
     max-height: 870px;
   }
+}
+
+.object-post-center {
+  object-position: center !important;
 }
