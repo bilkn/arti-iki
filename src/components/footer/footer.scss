@@ -60,7 +60,10 @@
   // footer__item
   &__item {
     margin-right: 10px;
-
+    transition: transform 200ms;
+    &:hover {
+      transform: translateX(5px);
+    }
     @media screen and (min-width: $breakpoint_s) {
       margin-bottom: 10px;
       margin-right: 0;
@@ -70,5 +73,10 @@
   // footer__link
   &__link {
     color: $section_text_color;
+    transition: color 100ms;
+    
+    &:hover {
+      color: orange;
+    }
   }
 }

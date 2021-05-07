@@ -94,7 +94,7 @@
 
   // hero__signature
   &__signature {
-    font-family: $font_dancing_script;
+    font-family: $font_league_script;
     font-size: 1.9rem;
     margin: auto;
 
@@ -184,5 +184,5 @@
 
 // Special class for selected slider button.
 .selected {
-  background: #5a5a5ac7;
+  background: orange;
 }
