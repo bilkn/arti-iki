@@ -49,18 +49,42 @@ Hero.Text = function HeroText({ children, ...rest }) {
   );
 };
 
-Hero.SignatureWrapper = function HeroSignatureWrapper({children, ...rest}) {
+Hero.SignatureWrapper = function HeroSignatureWrapper({ children, ...rest }) {
   return (
     <div className="hero__signature-wrapper" {...rest}>
       {children}
     </div>
   );
-}
+};
 
-Hero.Signature = function HeroSignature({children, ...rest}) {
+Hero.Signature = function HeroSignature({ children, ...rest }) {
   return (
     <p className="hero__signature" {...rest}>
       {children}
     </p>
   );
-}
+};
+
+Hero.BoxWrapper = function HeroBoxWrapper({ children, ...rest }) {
+  return (
+    <div className="hero__box-wrapper" {...rest}>
+      {children}
+    </div>
+  );
+};
+
+Hero.Box = function HeroBox({ children, ...rest }) {
+  return (
+    <div className="hero__box" {...rest}>
+      {children}
+    </div>
+  );
+};
+
+Hero.Button = function HeroButton({ children, ...rest }) {
+  return (
+    <button className="hero__button" {...rest}>
+      {children}
+    </button>
+  );
+};

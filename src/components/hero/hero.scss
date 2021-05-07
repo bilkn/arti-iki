@@ -46,7 +46,6 @@
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.9;
-    margin-top: 7.125em;
     padding: 0 23px;
     @media screen and (min-width: $breakpoint_s) {
       font-size: 3.125rem;
@@ -72,6 +71,9 @@
     color: #fff;
     display: flex;
     padding: 30px 0;
+    @media screen and (min-width: $breakpoint_s) {
+      padding: 60px 0;
+    }
   }
 
   // hero__signature
@@ -79,5 +81,31 @@
     font-family: $font_dancing_script;
     font-size: 1.9rem;
     margin: auto;
+  }
+
+  // hero__box-wrapper
+  &__box-wrapper {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  // hero__box
+  &__box {
+    margin: auto;
+  }
+
+  // hero__button
+  &__button {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 9px;
+    margin-right: 4px;
+    width: 9px;
+
+    @media screen and (min-width: $breakpoint_s) {
+      height: 15px;
+      margin-right: 8px;
+      width: 15px;
+    }
   }
 }

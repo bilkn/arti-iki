@@ -24,6 +24,14 @@ function Home() {
               sürekliliğini garanti ediyoruz.
             </Hero.Text>
           </Hero.Wrapper>
+          <Hero.BoxWrapper>
+            <Hero.Box>
+              <Hero.Button />
+              <Hero.Button />
+              <Hero.Button />
+              <Hero.Button />
+            </Hero.Box>
+          </Hero.BoxWrapper>
         </Hero.Background>
       </Hero>
       {/* HERO END */}
