@@ -1,9 +1,9 @@
 import React from 'react';
 import './content.scss';
 
-export default function Content({ children, ...rest }) {
+export default function Content({ className, children, ...rest }) {
   return (
-    <div className="content" {...rest}>
+    <div className={`content ${className || ''}`} {...rest}>
       {children}
     </div>
   );

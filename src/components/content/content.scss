@@ -10,7 +10,7 @@
   @media screen and (min-width: $breakpoint_s) {
     align-items: center;
     flex-direction: row;
-    max-height: 815px;
+    max-height: 650px;
   }
 
   // content__heading
@@ -65,9 +65,11 @@
     object-fit: cover;
     object-position: center !important;
     width: 100%;
+  }
+}
 
-    /*   @media screen and (min-width: $breakpoint_m) {
-      height: 100%;
-    } */
+.last-content-style {
+  @media screen and (min-width: $breakpoint_s) {
+    max-height: 870px;
   }
 }
