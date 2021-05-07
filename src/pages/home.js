@@ -9,25 +9,10 @@ import Img_1_WEBP from '../assets/fireplace-1.webp';
 import Img_2_WEBP from '../assets/fireplace-2.webp';
 import Img_3_WEBP from '../assets/fireplace-3.webp';
 import Img_4_WEBP from '../assets/fireplace-4.webp';
+import useSlideLogic from '../hooks/useSlideLogic';
 
 function Home() {
-  const [translateXValue, setTranslateXValue] = useState(0);
-
-  const handleSliderButton = (translateX) => {
-    setTranslateXValue(translateX);
-  };
-
-  const moveSlide = useCallback(() => {
-    if (translateXValue < 300) setTranslateXValue((oldValue) => oldValue + 100);
-    else setTranslateXValue(0);
-  }, [translateXValue]);
-
-  useEffect(() => {
-    const interval = setInterval(moveSlide, 5000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, [moveSlide]);
+  const { translateXValue, handleSliderButton } = useSlideLogic();
 
   return (
     <>
