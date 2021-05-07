@@ -181,3 +181,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(#{$img-fireplace_3}.jpg);
 }
+
+// Special class for selected slider button.
+.selected {
+  background: #5a5a5ac7;
+}

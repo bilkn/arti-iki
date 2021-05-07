@@ -37,10 +37,22 @@ function Home() {
           </Hero.Wrapper>
           <Hero.BoxWrapper>
             <Hero.Box>
-              <Hero.Button onClick={() => handleSliderButton(0)} />
-              <Hero.Button onClick={() => handleSliderButton(100)} />
-              <Hero.Button onClick={() => handleSliderButton(200)} />
-              <Hero.Button onClick={() => handleSliderButton(300)} />
+              <Hero.Button
+                className={translateXValue === 0 ? 'selected' : ''}
+                onClick={() => handleSliderButton(0)}
+              />
+              <Hero.Button
+                className={translateXValue === 100 ? 'selected' : ''}
+                onClick={() => handleSliderButton(100)}
+              />
+              <Hero.Button
+                className={translateXValue === 200 ? 'selected' : ''}
+                onClick={() => handleSliderButton(200)}
+              />
+              <Hero.Button
+                className={translateXValue === 300 ? 'selected' : ''}
+                onClick={() => handleSliderButton(300)}
+              />
             </Hero.Box>
           </Hero.BoxWrapper>
         </Hero.Background>

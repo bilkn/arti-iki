@@ -97,9 +97,9 @@ Hero.Box = function HeroBox({ children, ...rest }) {
   );
 };
 
-Hero.Button = function HeroButton({ children, ...rest }) {
+Hero.Button = function HeroButton({ className, children, ...rest }) {
   return (
-    <button className="hero__button" {...rest}>
+    <button className={`hero__button ${className}`} {...rest}>
       {children}
     </button>
   );
