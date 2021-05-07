@@ -19,7 +19,7 @@
     flex-basis: 100%;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       margin-right: 2rem;
     }
   }
@@ -30,7 +30,7 @@
     flex-direction: column;
     padding: $content_padding;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       flex-direction: row;
     }
   }
@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       flex-direction: column;
     }
   }
@@ -54,7 +54,7 @@
   &__item {
     margin-right: 10px;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       margin-bottom: 10px;
       margin-right: 0;
     }

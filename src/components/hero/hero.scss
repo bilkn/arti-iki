@@ -21,7 +21,7 @@
     margin: auto;
     padding: 0 39px;
     padding-bottom: 10px;
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       max-width: 800px;
       padding-bottom: 40px;
     }
@@ -33,7 +33,7 @@
     font-family: $font_poppins;
     font-weight: 300;
     margin-top: 5.3em;
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       font-size: 1.5rem;
       line-height: 2.3;
       margin-top: 4rem;
@@ -47,7 +47,13 @@
     font-weight: 500;
     line-height: 1.9;
     padding: 0 23px;
+
     @media screen and (min-width: $breakpoint_s) {
+      font-size: 2.3rem;
+      margin: auto;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
       font-size: 3.125rem;
       margin: auto;
     }
@@ -60,7 +66,12 @@
     font-size: 1.1rem;
     line-height: 1.4;
     margin-top: 20px;
-    @media screen and (min-width: $breakpoint_s) {
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
       font-size: 1.625rem;
     }
   }
@@ -71,7 +82,7 @@
     color: #fff;
     display: flex;
     padding: 30px 0;
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       padding: 60px 0;
     }
   }
@@ -83,6 +94,10 @@
     margin: auto;
 
     @media screen and (min-width: $breakpoint_s) {
+      font-size: 2.75rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
       font-size: 3.75rem;
     }
   }
@@ -128,7 +143,7 @@
     margin-right: 4px;
     width: 9px;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       height: 15px;
       margin-right: 8px;
       width: 15px;

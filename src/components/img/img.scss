@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .img {
   height: auto;
@@ -6,7 +6,7 @@
   object-fit: cover;
   width: 100%;
 
-  @media screen and (min-width: $breakpoint_s) {
+  @media screen and (min-width: $breakpoint_m) {
     max-height: 365px;
   }
 
@@ -15,13 +15,13 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       flex-direction: row;
     }
   }
 
   &__container {
-    @media screen and (min-width: $breakpoint_s) {
+    @media screen and (min-width: $breakpoint_m) {
       flex-basis: 100%;
     }
   }
