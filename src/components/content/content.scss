@@ -20,11 +20,31 @@
 
   // content__wrapper
   &__wrapper {
+    flex-basis: 66.6%;
+    height: auto;
     padding: $content_padding;
   }
 
   // content__text
   &__text {
     line-height: 1.4;
+  }
+
+  // content__img-container
+  &__img-container {
+    height: 216px;
+    overflow: hidden;
+    @media screen and (min-width: 40em) {
+      flex-basis: 33.3%;
+      height: auto;
+    }
+  }
+
+  // content__img
+  &__img {
+    height: auto;
+    object-fit: cover;
+    object-position: center !important; 
+    width: 100%;
   }
 }

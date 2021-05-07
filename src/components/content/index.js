@@ -1,5 +1,5 @@
 import React from 'react';
-import "./content.scss";
+import './content.scss';
 
 export default function Content({ children, ...rest }) {
   return (
@@ -31,4 +31,16 @@ Content.Text = function ContentText({ children, ...rest }) {
       {children}
     </p>
   );
+};
+
+Content.ImgContainer = function ContentImgContainer({ children, ...rest }) {
+  return (
+    <div className="content__img-container" {...rest}>
+      {children}
+    </div>
+  );
+};
+
+Content.Img = function ContentImg({ src, alt, ...rest }) {
+  return <img src={src} alt={alt} className="content__img" {...rest} />;
 };

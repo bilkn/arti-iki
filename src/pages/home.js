@@ -25,13 +25,13 @@ function Home() {
             </Hero.Text>
           </Hero.Wrapper>
         </Hero.Background>
-        <Hero.SignatureWrapper>
-          <Hero.Signature>art of business</Hero.Signature>
-        </Hero.SignatureWrapper>
       </Hero>
       {/* HERO END */}
       {/* IMG GALLERY START */}
       <div>
+        <Hero.SignatureWrapper>
+          <Hero.Signature>art of business</Hero.Signature>
+        </Hero.SignatureWrapper>
         <Img.Wrapper>
           <Img.Container>
             <Img src={Img_2_JPG} style={{ objectPosition: 'bottom' }} />
@@ -50,9 +50,9 @@ function Home() {
       {/* IMG GALLERY END */}
       {/* ABOUT SECTION START */}
       <Content>
-        <Img.Container>
-          <Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
-        </Img.Container>
+        <Content.ImgContainer>
+          <Content.Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
+        </Content.ImgContainer>
         <Content.Wrapper>
           <Content.Heading>Hakkımızda</Content.Heading>
           <Content.Text>
@@ -84,11 +84,14 @@ function Home() {
       {/* ABOUT SECTION END */}
       {/* VISION SECTION START */}
       <Content style={{ background: 'black', color: '#fff' }}>
-        <Img.Container>
-          <Img src={Img_1_JPG} style={{ objectPosition: 'center center' }} />
-        </Img.Container>
+        <Content.ImgContainer>
+          <Content.Img
+            src={Img_1_JPG}
+            style={{ objectPosition: 'center center' }}
+          />
+        </Content.ImgContainer>
         <Content.Wrapper>
-          <Content.Heading>Vizyon</Content.Heading>
+          <Content.Heading style={{ color: '#fff' }}>Vizyon</Content.Heading>
           <Content.Text>
             Sıfır hata, %100 müşteri memnuniyeti ile Türkiye ve dünya pazarında
             lider kuruluşlar arasında olmayı hedefleyen X,
@@ -108,9 +111,9 @@ function Home() {
       {/* VISION SECTION END */}
       {/* MISSION SECTION START */}
       <Content>
-        <Img.Container>
-          <Img src={Img_3_JPG} style={{ objectPosition: '30% 30%' }} />
-        </Img.Container>
+        <Content.ImgContainer>
+          <Content.Img src={Img_3_JPG} style={{ objectPosition: '30% 30%' }} />
+        </Content.ImgContainer>
         <Content.Wrapper>
           <Content.Heading>Misyon</Content.Heading>
           <Content.Text>
