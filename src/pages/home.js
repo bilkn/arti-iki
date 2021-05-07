@@ -1,19 +1,13 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import { Content, Footer, Hero, Img } from '../components';
-import { assets } from '../fixtures/assets';
 import Img_1_JPG from '../assets/fireplace-1.jpg';
 import Img_2_JPG from '../assets/fireplace-2.jpg';
 import Img_3_JPG from '../assets/fireplace-3.jpg';
 import Img_4_JPG from '../assets/fireplace-4.jpg';
-import Img_1_WEBP from '../assets/fireplace-1.webp';
-import Img_2_WEBP from '../assets/fireplace-2.webp';
-import Img_3_WEBP from '../assets/fireplace-3.webp';
-import Img_4_WEBP from '../assets/fireplace-4.webp';
 import useSlideLogic from '../hooks/useSlideLogic';
 
 function Home() {
   const { translateXValue, handleSliderButton } = useSlideLogic();
-
   return (
     <>
       <main>
@@ -66,7 +60,10 @@ function Home() {
           </Hero.SignatureWrapper>
           <Img.Wrapper>
             <Img.Container>
-              <Img src={Img_2_JPG} style={{ objectPosition: 'bottom' }} />
+              <Img
+                src={Img_2_JPG}
+                style={{ objectPosition: 'bottom' }}
+              />
             </Img.Container>
             <Img.Container>
               <Img src={Img_4_JPG} style={{ objectPosition: '77% 77%' }} />
