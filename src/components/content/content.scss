@@ -10,6 +10,7 @@
   @media screen and (min-width: 40em) {
     align-items: center;
     flex-direction: row;
+    max-height: 815px;
   }
 
   // content__heading
@@ -35,6 +36,7 @@
     height: 216px;
     overflow: hidden;
     @media screen and (min-width: 40em) {
+      align-self: stretch;
       flex-basis: 33.3%;
       height: auto;
     }
@@ -42,9 +44,13 @@
 
   // content__img
   &__img {
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: center !important; 
     width: 100%;
+
+   /*   @media screen and (min-width: 40em) {
+      height: 100%;
+    } */
   }
 }
