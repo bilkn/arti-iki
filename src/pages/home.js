@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Content, Footer, Hero, Img } from '../components';
 import { assets } from '../fixtures/assets';
 import Img_1_JPG from '../assets/fireplace-1.jpg';
@@ -16,6 +16,18 @@ function Home() {
   const handleSliderButton = (translateX) => {
     setTranslateXValue(translateX);
   };
+
+  const moveSlide = useCallback(() => {
+    if (translateXValue < 300) setTranslateXValue((oldValue) => oldValue + 100);
+    else setTranslateXValue(0);
+  }, [translateXValue]);
+
+  useEffect(() => {
+    const interval = setInterval(moveSlide, 5000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [moveSlide]);
 
   return (
     <>
