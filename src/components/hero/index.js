@@ -65,6 +65,22 @@ Hero.Signature = function HeroSignature({ children, ...rest }) {
   );
 };
 
+Hero.Slider = function HeroSlider({ children, ...rest }) {
+  return (
+    <div className="hero__slider" {...rest}>
+      {children}
+    </div>
+  );
+};
+
+Hero.Slide = function HeroSlide({ className, children, ...rest }) {
+  return (
+    <div className={`hero__slide ${className || ''}`} {...rest}>
+      {children}
+    </div>
+  );
+};
+
 Hero.BoxWrapper = function HeroBoxWrapper({ children, ...rest }) {
   return (
     <div className="hero__box-wrapper" {...rest}>

@@ -9,12 +9,10 @@
 
   // hero__background
   &__background {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(#{$img-fireplace_1}.jpg) center no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: inherit;
+    position: relative;
     width: 100%;
   }
 
@@ -22,8 +20,10 @@
   &__wrapper {
     margin: auto;
     padding: 0 39px;
+    padding-bottom: 10px;
     @media screen and (min-width: $breakpoint_s) {
       max-width: 800px;
+      padding-bottom: 40px;
     }
   }
 
@@ -76,6 +76,28 @@
     }
   }
 
+  // hero__slider
+  &__slider {
+    background: chocolate;
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: transform 700ms;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  // hero__slide
+  &__slide {
+    background: center no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    height: inherit;
+    width: inherit;
+  }
+
   // hero__signature
   &__signature {
     font-family: $font_dancing_script;
@@ -108,4 +130,24 @@
       width: 15px;
     }
   }
+}
+
+.bg-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_1}.jpg);
+}
+
+.bg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_2}.jpg);
+}
+
+.bg-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_4}.jpg);
+}
+
+.bg-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_3}.jpg);
 }

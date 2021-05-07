@@ -18,6 +18,10 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #root {
   min-height: 100%;
 }

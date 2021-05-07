@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Content, Footer, Hero, Img } from '../components';
 import { assets } from '../fixtures/assets';
 import Img_1_JPG from '../assets/fireplace-1.jpg';
@@ -11,11 +11,26 @@ import Img_3_WEBP from '../assets/fireplace-3.webp';
 import Img_4_WEBP from '../assets/fireplace-4.webp';
 
 function Home() {
+  const [translateXValue, setTranslateXValue] = useState(0);
+
+  const handleSliderButton = (translateX) => {
+    console.log(translateX)
+    setTranslateXValue(translateX);
+  };
+
   return (
     <>
       {/* HERO START */}
       <Hero>
         <Hero.Background>
+          <Hero.Slider
+            style={{ transform: `translateX(-${translateXValue}%)` }}
+          >
+            <Hero.Slide className="bg-1" />
+            <Hero.Slide className="bg-2" />
+            <Hero.Slide className="bg-3" />
+            <Hero.Slide className="bg-4" />
+          </Hero.Slider>
           <Hero.Logo>FirePlace</Hero.Logo>
           <Hero.Wrapper>
             <Hero.Title>FirePlace Şömine ile Anın Keyfini Yaşa</Hero.Title>
@@ -26,10 +41,10 @@ function Home() {
           </Hero.Wrapper>
           <Hero.BoxWrapper>
             <Hero.Box>
-              <Hero.Button />
-              <Hero.Button />
-              <Hero.Button />
-              <Hero.Button />
+              <Hero.Button onClick={() => handleSliderButton(0)} />
+              <Hero.Button onClick={() => handleSliderButton(100)} />
+              <Hero.Button onClick={() => handleSliderButton(200)} />
+              <Hero.Button onClick={() => handleSliderButton(300)} />
             </Hero.Box>
           </Hero.BoxWrapper>
         </Hero.Background>
