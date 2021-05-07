@@ -14,7 +14,6 @@ function Home() {
   const [translateXValue, setTranslateXValue] = useState(0);
 
   const handleSliderButton = (translateX) => {
-    console.log(translateX)
     setTranslateXValue(translateX);
   };
 

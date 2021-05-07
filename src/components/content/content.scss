@@ -17,6 +17,10 @@
   &__heading {
     @include HeadingStyle;
     font-weight: 600;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 1.875rem;
+    }
   }
 
   // content__wrapper
@@ -29,6 +33,9 @@
   // content__text
   &__text {
     line-height: 1.4;
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 1.25rem;
+    }
   }
 
   // content__img-container

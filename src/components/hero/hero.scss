@@ -76,6 +76,17 @@
     }
   }
 
+  // hero__signature
+  &__signature {
+    font-family: $font_dancing_script;
+    font-size: 1.9rem;
+    margin: auto;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 3.75rem;
+    }
+  }
+
   // hero__slider
   &__slider {
     background: chocolate;
@@ -96,13 +107,6 @@
     flex-shrink: 0;
     height: inherit;
     width: inherit;
-  }
-
-  // hero__signature
-  &__signature {
-    font-family: $font_dancing_script;
-    font-size: 1.9rem;
-    margin: auto;
   }
 
   // hero__box-wrapper
