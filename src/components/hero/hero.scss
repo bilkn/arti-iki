@@ -1,0 +1,202 @@
+@import '../../styles/variables.scss';
+
+.hero {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+
+  // hero__background
+  &__background {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+    position: relative;
+    width: 100%;
+  }
+
+  // hero__wrapper
+  &__wrapper {
+    margin: auto;
+    padding: 0 39px;
+    padding-bottom: 10px;
+    @media screen and (min-width: $breakpoint_m) {
+      max-width: 800px;
+      padding-bottom: 40px;
+    }
+  }
+
+  // hero__logo
+  &__logo {
+    font-size: 1.1rem;
+    font-family: $font_poppins;
+    font-weight: 300;
+    margin-top: 5.3em;
+    user-select: none;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 1.3rem;
+      line-height: 2.3;
+      margin-top: 3rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.5rem;
+    }
+  }
+
+  // hero__title
+  &__title {
+    font-family: $font_poppins;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.9;
+    padding: 0 23px;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 2.3rem;
+      margin: auto;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 3.125rem;
+      margin: auto;
+    }
+  }
+
+  // hero__text
+  &__text {
+    color: #f2f2f2;
+    font-family: $font_roboto;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-top: 20px;
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.625rem;
+    }
+  }
+
+  // hero__signature-wrapper
+  &__signature-wrapper {
+    background: #000;
+    color: #fff;
+    display: flex;
+    padding: 30px 0;
+    @media screen and (min-width: $breakpoint_m) {
+      padding: 60px 0;
+    }
+  }
+
+  // hero__signature
+  &__signature {
+    font-family: $font_league_script;
+    font-size: 1.9rem;
+    margin: auto;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 2.75rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 3.75rem;
+    }
+  }
+
+  // hero__slider
+  &__slider {
+    background: rgba(0, 0, 0, 0.664);
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: transform 700ms;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  // hero__slide
+  &__slide {
+    background: center no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    height: inherit;
+    width: inherit;
+  }
+
+  // hero__box-wrapper
+  &__box-wrapper {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  // hero__box
+  &__box {
+    margin: auto;
+  }
+
+  // hero__button
+  &__button {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 9px;
+    margin-right: 4px;
+    width: 9px;
+
+    @media screen and (min-width: $breakpoint_s) {
+      height: 12px;
+      margin-right: 6px;
+      width: 12px;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      height: 15px;
+      margin-right: 8px;
+      width: 15px;
+    }
+  }
+}
+
+.bg-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_1}.jpg);
+}
+
+.bg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_2}.jpg);
+
+  @media screen and (min-width: $breakpoint-m) {
+    background-position-y: bottom;
+  }
+
+  @media screen and (min-width: 125em) {
+    background-position-y: 80%;
+  }
+}
+
+.bg-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_4}.jpg);
+
+  @media screen and (min-width: $breakpoint-m) {
+    background-position-y: 65%;
+  }
+}
+
+.bg-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(#{$img-fireplace_3}.jpg);
+  background-position-y: 25%;
+}
+
+// Special class for selected slider button.
+.selected {
+  background: orange;
+}

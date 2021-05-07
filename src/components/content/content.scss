@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.content {
+  background: $section_bg_color_1;
+  color: $section_text_color;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $breakpoint_s) {
+    align-items: center;
+    flex-direction: row;
+    max-height: 650px;
+  }
+
+  // content__heading
+  &__heading {
+    @include HeadingStyle;
+    font-weight: 600;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.875rem;
+    }
+  }
+
+  // content__wrapper
+  &__wrapper {
+    flex-basis: 66.6%;
+    height: auto;
+    padding: $content_padding;
+  }
+
+  // content__text
+  &__text {
+    line-height: 1.4;
+
+    @media screen and (min-width: $breakpoint_s) {
+      font-size: 1.1rem;
+    }
+
+    @media screen and (min-width: $breakpoint_m) {
+      font-size: 1.25rem;
+    }
+  }
+
+  // content__img-container
+  &__img-container {
+    height: 216px;
+    overflow: hidden;
+    @media screen and (min-width: $breakpoint_s) {
+      align-self: stretch;
+      flex-basis: 33.3%;
+      height: auto;
+      margin-right: 2rem;
+    }
+  }
+
+  // content__img
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.last-content-style {
+  @media screen and (min-width: $breakpoint_s) {
+    max-height: 870px;
+  }
+}
+
+.object-post-center {
+  object-position: center !important;
+}

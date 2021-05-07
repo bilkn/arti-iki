@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.img {
+  height: auto;
+  max-height: 216px;
+  object-fit: cover;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint_s) {
+    max-height: 365px;
+  }
+
+  @media screen and (min-width: $breakpoint_xl) {
+    max-height: 560px;
+  }
+
+  // img__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint_s) {
+      flex-direction: row;
+    }
+  }
+
+  // img__container
+  &__container {
+    @media screen and (min-width: $breakpoint_s) {
+      flex-basis: 100%;
+    }
+  }
+}
